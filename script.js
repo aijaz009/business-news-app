@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiKey = 'Qin9902wJRmshsTE54XUIARXzJqbp1JjOD8jsnrGlWi9N1m6jO';
+    const apiKey = 'Qin9902wJRmshsTE54XUIARXzJqbp1JjOD8jsnrGlWi9N1m6jO'; // Your API key
     const apiUrl = 'https://google-news13.p.rapidapi.com/business?lr=en-US';
     let page = 1;
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
             }
         }).fail(function(xhr, status, error) {
             console.error('Error fetching news:', error);
-            alert('Failed to fetch news articles. Please try again later.');
+            alert('Failed to fetch news articles. Please check your API key and network connection.');
         });
     }
 
